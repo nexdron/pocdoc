@@ -6,6 +6,6 @@ Future<UserCredential?> githubSignInFunc() async {
   // Create a new provider
   GithubAuthProvider githubProvider = GithubAuthProvider();
 
-  // Once signed in, return the UserCredential
+  // Once signed in, return the UserCredentials
   return await FirebaseAuth.instance.signInWithPopup(githubProvider);
 }
